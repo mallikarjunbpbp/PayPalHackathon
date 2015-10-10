@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		063C0DE11BC9AD3100060173 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 063C0DE01BC9AD3100060173 /* main.m */; };
+		063C0DE41BC9AD3100060173 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 063C0DE31BC9AD3100060173 /* AppDelegate.m */; };
+		063C0DE71BC9AD3100060173 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 063C0DE61BC9AD3100060173 /* ViewController.m */; };
+		063C0DEA1BC9AD3100060173 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 063C0DE81BC9AD3100060173 /* Main.storyboard */; };
+		063C0DEC1BC9AD3100060173 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 063C0DEB1BC9AD3100060173 /* Assets.xcassets */; };
+		063C0DEF1BC9AD3100060173 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 063C0DED1BC9AD3100060173 /* LaunchScreen.storyboard */; };
+		063C0DFA1BC9AD3100060173 /* KickbackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 063C0DF91BC9AD3100060173 /* KickbackTests.m */; };
+		063C0E051BC9AD3100060173 /* KickbackUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 063C0E041BC9AD3100060173 /* KickbackUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		063C0DF61BC9AD3100060173 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 063C0DD41BC9AD3100060173 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 063C0DDB1BC9AD3100060173;
+			remoteInfo = Kickback;
+		};
+		063C0E011BC9AD3100060173 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 063C0DD41BC9AD3100060173 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 063C0DDB1BC9AD3100060173;
+			remoteInfo = Kickback;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		063C0DDC1BC9AD3100060173 /* Kickback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kickback.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		063C0DE01BC9AD3100060173 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		063C0DE21BC9AD3100060173 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		063C0DE31BC9AD3100060173 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		063C0DE51BC9AD3100060173 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		063C0DE61BC9AD3100060173 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		063C0DE91BC9AD3100060173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		063C0DEB1BC9AD3100060173 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		063C0DEE1BC9AD3100060173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		063C0DF01BC9AD3100060173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		063C0DF51BC9AD3100060173 /* KickbackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KickbackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		063C0DF91BC9AD3100060173 /* KickbackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KickbackTests.m; sourceTree = "<group>"; };
+		063C0DFB1BC9AD3100060173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		063C0E001BC9AD3100060173 /* KickbackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KickbackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		063C0E041BC9AD3100060173 /* KickbackUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KickbackUITests.m; sourceTree = "<group>"; };
+		063C0E061BC9AD3100060173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		063C0DD91BC9AD3100060173 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		063C0DF21BC9AD3100060173 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		063C0DFD1BC9AD3100060173 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		063C0DD31BC9AD3100060173 = {
+			isa = PBXGroup;
+			children = (
+				063C0DDE1BC9AD3100060173 /* Kickback */,
+				063C0DF81BC9AD3100060173 /* KickbackTests */,
+				063C0E031BC9AD3100060173 /* KickbackUITests */,
+				063C0DDD1BC9AD3100060173 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		063C0DDD1BC9AD3100060173 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				063C0DDC1BC9AD3100060173 /* Kickback.app */,
+				063C0DF51BC9AD3100060173 /* KickbackTests.xctest */,
+				063C0E001BC9AD3100060173 /* KickbackUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		063C0DDE1BC9AD3100060173 /* Kickback */ = {
+			isa = PBXGroup;
+			children = (
+				063C0DE21BC9AD3100060173 /* AppDelegate.h */,
+				063C0DE31BC9AD3100060173 /* AppDelegate.m */,
+				063C0DE51BC9AD3100060173 /* ViewController.h */,
+				063C0DE61BC9AD3100060173 /* ViewController.m */,
+				063C0DE81BC9AD3100060173 /* Main.storyboard */,
+				063C0DEB1BC9AD3100060173 /* Assets.xcassets */,
+				063C0DED1BC9AD3100060173 /* LaunchScreen.storyboard */,
+				063C0DF01BC9AD3100060173 /* Info.plist */,
+				063C0DDF1BC9AD3100060173 /* Supporting Files */,
+			);
+			path = Kickback;
+			sourceTree = "<group>";
+		};
+		063C0DDF1BC9AD3100060173 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				063C0DE01BC9AD3100060173 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		063C0DF81BC9AD3100060173 /* KickbackTests */ = {
+			isa = PBXGroup;
+			children = (
+				063C0DF91BC9AD3100060173 /* KickbackTests.m */,
+				063C0DFB1BC9AD3100060173 /* Info.plist */,
+			);
+			path = KickbackTests;
+			sourceTree = "<group>";
+		};
+		063C0E031BC9AD3100060173 /* KickbackUITests */ = {
+			isa = PBXGroup;
+			children = (
+				063C0E041BC9AD3100060173 /* KickbackUITests.m */,
+				063C0E061BC9AD3100060173 /* Info.plist */,
+			);
+			path = KickbackUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		063C0DDB1BC9AD3100060173 /* Kickback */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 063C0E091BC9AD3100060173 /* Build configuration list for PBXNativeTarget "Kickback" */;
+			buildPhases = (
+				063C0DD81BC9AD3100060173 /* Sources */,
+				063C0DD91BC9AD3100060173 /* Frameworks */,
+				063C0DDA1BC9AD3100060173 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kickback;
+			productName = Kickback;
+			productReference = 063C0DDC1BC9AD3100060173 /* Kickback.app */;
+			productType = "com.apple.product-type.application";
+		};
+		063C0DF41BC9AD3100060173 /* KickbackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 063C0E0C1BC9AD3100060173 /* Build configuration list for PBXNativeTarget "KickbackTests" */;
+			buildPhases = (
+				063C0DF11BC9AD3100060173 /* Sources */,
+				063C0DF21BC9AD3100060173 /* Frameworks */,
+				063C0DF31BC9AD3100060173 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				063C0DF71BC9AD3100060173 /* PBXTargetDependency */,
+			);
+			name = KickbackTests;
+			productName = KickbackTests;
+			productReference = 063C0DF51BC9AD3100060173 /* KickbackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		063C0DFF1BC9AD3100060173 /* KickbackUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 063C0E0F1BC9AD3100060173 /* Build configuration list for PBXNativeTarget "KickbackUITests" */;
+			buildPhases = (
+				063C0DFC1BC9AD3100060173 /* Sources */,
+				063C0DFD1BC9AD3100060173 /* Frameworks */,
+				063C0DFE1BC9AD3100060173 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				063C0E021BC9AD3100060173 /* PBXTargetDependency */,
+			);
+			name = KickbackUITests;
+			productName = KickbackUITests;
+			productReference = 063C0E001BC9AD3100060173 /* KickbackUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		063C0DD41BC9AD3100060173 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Mallikarjun;
+				TargetAttributes = {
+					063C0DDB1BC9AD3100060173 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					063C0DF41BC9AD3100060173 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 063C0DDB1BC9AD3100060173;
+					};
+					063C0DFF1BC9AD3100060173 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 063C0DDB1BC9AD3100060173;
+					};
+				};
+			};
+			buildConfigurationList = 063C0DD71BC9AD3100060173 /* Build configuration list for PBXProject "Kickback" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 063C0DD31BC9AD3100060173;
+			productRefGroup = 063C0DDD1BC9AD3100060173 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				063C0DDB1BC9AD3100060173 /* Kickback */,
+				063C0DF41BC9AD3100060173 /* KickbackTests */,
+				063C0DFF1BC9AD3100060173 /* KickbackUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		063C0DDA1BC9AD3100060173 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				063C0DEF1BC9AD3100060173 /* LaunchScreen.storyboard in Resources */,
+				063C0DEC1BC9AD3100060173 /* Assets.xcassets in Resources */,
+				063C0DEA1BC9AD3100060173 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		063C0DF31BC9AD3100060173 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		063C0DFE1BC9AD3100060173 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		063C0DD81BC9AD3100060173 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				063C0DE71BC9AD3100060173 /* ViewController.m in Sources */,
+				063C0DE41BC9AD3100060173 /* AppDelegate.m in Sources */,
+				063C0DE11BC9AD3100060173 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		063C0DF11BC9AD3100060173 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				063C0DFA1BC9AD3100060173 /* KickbackTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		063C0DFC1BC9AD3100060173 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				063C0E051BC9AD3100060173 /* KickbackUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		063C0DF71BC9AD3100060173 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 063C0DDB1BC9AD3100060173 /* Kickback */;
+			targetProxy = 063C0DF61BC9AD3100060173 /* PBXContainerItemProxy */;
+		};
+		063C0E021BC9AD3100060173 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 063C0DDB1BC9AD3100060173 /* Kickback */;
+			targetProxy = 063C0E011BC9AD3100060173 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		063C0DE81BC9AD3100060173 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				063C0DE91BC9AD3100060173 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		063C0DED1BC9AD3100060173 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				063C0DEE1BC9AD3100060173 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		063C0E071BC9AD3100060173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		063C0E081BC9AD3100060173 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		063C0E0A1BC9AD3100060173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Kickback/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mallikarjun.Kickback;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		063C0E0B1BC9AD3100060173 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Kickback/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mallikarjun.Kickback;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		063C0E0D1BC9AD3100060173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KickbackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mallikarjun.KickbackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kickback.app/Kickback";
+			};
+			name = Debug;
+		};
+		063C0E0E1BC9AD3100060173 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KickbackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mallikarjun.KickbackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kickback.app/Kickback";
+			};
+			name = Release;
+		};
+		063C0E101BC9AD3100060173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KickbackUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mallikarjun.KickbackUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Kickback;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		063C0E111BC9AD3100060173 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KickbackUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mallikarjun.KickbackUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Kickback;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		063C0DD71BC9AD3100060173 /* Build configuration list for PBXProject "Kickback" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				063C0E071BC9AD3100060173 /* Debug */,
+				063C0E081BC9AD3100060173 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		063C0E091BC9AD3100060173 /* Build configuration list for PBXNativeTarget "Kickback" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				063C0E0A1BC9AD3100060173 /* Debug */,
+				063C0E0B1BC9AD3100060173 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		063C0E0C1BC9AD3100060173 /* Build configuration list for PBXNativeTarget "KickbackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				063C0E0D1BC9AD3100060173 /* Debug */,
+				063C0E0E1BC9AD3100060173 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		063C0E0F1BC9AD3100060173 /* Build configuration list for PBXNativeTarget "KickbackUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				063C0E101BC9AD3100060173 /* Debug */,
+				063C0E111BC9AD3100060173 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 063C0DD41BC9AD3100060173 /* Project object */;
+}
