@@ -41,16 +41,20 @@
     [mapView setZoomEnabled:YES];
     [mapView setScrollEnabled:YES];
     
+    
+}
+
+-(void)viewWillAppear:(BOOL)animated{
     //setting region
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(mapView.userLocation.coordinate, 400*METERS_PER_MILE, 400*METERS_PER_MILE);
     [self.mapView setRegion:[self.mapView regionThatFits:region] animated:YES];
     
     PFUser *currentUser = [PFUser currentUser];
     if (!currentUser) {
-                    // show the signup or login screen
+        // show the signup or login screen
         NSLog(@"Unidentified Current User");
     } else {
-            // do stuff with the user
+        // do stuff with the user
         NSLog(@"Get data related to %@", currentUser.username);
         _username=currentUser.username;
     }
@@ -97,8 +101,9 @@
         }
         
     }
-    
+
 }
+
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation
 {
