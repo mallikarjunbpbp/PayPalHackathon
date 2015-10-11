@@ -8,7 +8,7 @@
 
 #import "MapViewController.h"
 #define METERS_PER_MILE 1609.344
-
+#import "UserDetailsViewController.h"
 
 @interface MapViewController ()
 
@@ -92,11 +92,25 @@
 
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
 {
-    NSLog(@"inside the stupid method");
+        //Here, the annotation tapped can be accessed using view.annotation
     NSLog(@"%@",view.annotation.title);
     NSLog(@"%@",view.annotation.subtitle);
-    //Here, the annotation tapped can be accessed using view.annotation
+    [self performSegueWithIdentifier:@"mapContactDetails" sender:view.annotation.subtitle];
     
+    
+}
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Make sure your segue name in storyboard is the same as this line
+    if ([[segue identifier] isEqualToString:@"mapContactDetails"])
+    {
+        // Get reference to the destination view controller
+        UserDetailsViewController *userDetailsViewController = [segue destinationViewController];
+                    // Pass any objects to the view controller here, like...
+        NSLog(@"user name is :%@", sender);
+        userDetailsViewController.username=sender;
+
+    }
 }
 
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation

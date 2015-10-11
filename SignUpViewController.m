@@ -50,24 +50,31 @@
 
 - (IBAction)signupButtonPressed:(id)sender {
     
-    PFUser *user = [PFUser user];
-    user.username = [_username text];
-    user.password = [_password text];
-    user[@"firstName"] = [_name text];
-    user[@"age"] = [_age text] ;
-    user[@"phoneNumber"] = [_phoneNumber text];
-    user[@"address"] = [_address text];
-    user[@"description"] = [_descriptionTextView text];
-    
-    [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        if (!error) {
-            
-            NSLog(@"Insertion successful. Move to Home Page");
-        } else {
-            NSString *errorString = [error userInfo][@"error"];
-            NSLog(@"errorString %@", errorString);
-        }
-    }];
+    if([_name.text length]==0 || [_username.text length]==0 || [_password.text length]==0 || [_age.text length]==0 || [_phoneNumber.text length]==0 || [_address.text length]==0 || [_descriptionTextView.text length]==0){
+        [_statusLabel setText:@"All the feilds are mandatory"];
+        
+    }else{
+
+        PFUser *user = [PFUser user];
+        user.username = [_username text];
+        user.password = [_password text];
+        user[@"firstName"] = [_name text];
+        user[@"age"] = [_age text] ;
+        user[@"phoneNumber"] = [_phoneNumber text];
+        user[@"address"] = [_address text];
+        user[@"description"] = [_descriptionTextView text];
+        user[@"gender"] = [_gender text];
+        [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+            if (!error) {
+                
+                NSLog(@"Insertion successful. Move to Home Page");
+            } else {
+                NSString *errorString = [error userInfo][@"error"];
+                NSLog(@"errorString %@", errorString);
+                [_statusLabel setText:@"Unable to sign up right now"];
+            }
+        }];
+    }
     
 }
 

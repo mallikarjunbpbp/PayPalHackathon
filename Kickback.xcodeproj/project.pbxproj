@@ -11,7 +11,6 @@
 		063C0DE41BC9AD3100060173 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 063C0DE31BC9AD3100060173 /* AppDelegate.m */; };
 		063C0DE71BC9AD3100060173 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 063C0DE61BC9AD3100060173 /* ViewController.m */; };
 		063C0DEA1BC9AD3100060173 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 063C0DE81BC9AD3100060173 /* Main.storyboard */; };
-		063C0DEC1BC9AD3100060173 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 063C0DEB1BC9AD3100060173 /* Assets.xcassets */; };
 		063C0DEF1BC9AD3100060173 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 063C0DED1BC9AD3100060173 /* LaunchScreen.storyboard */; };
 		063C0DFA1BC9AD3100060173 /* KickbackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 063C0DF91BC9AD3100060173 /* KickbackTests.m */; };
 		063C0E051BC9AD3100060173 /* KickbackUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 063C0E041BC9AD3100060173 /* KickbackUITests.m */; };
@@ -29,6 +28,34 @@
 		063C0E331BC9DEA800060173 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 063C0E321BC9DEA800060173 /* AudioToolbox.framework */; };
 		063C0E351BC9ECD600060173 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 063C0E341BC9ECD600060173 /* MapKit.framework */; };
 		063C0E381BC9FC6D00060173 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 063C0E371BC9FC6D00060173 /* MapViewController.m */; settings = {ASSET_TAGS = (); }; };
+		063C0E3B1BCA1C6C00060173 /* UserDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 063C0E3A1BCA1C6C00060173 /* UserDetailsViewController.m */; settings = {ASSET_TAGS = (); }; };
+		063C0E3E1BCA2AF800060173 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 063C0E3D1BCA2AF800060173 /* ProfileViewController.m */; settings = {ASSET_TAGS = (); }; };
+		064DB26C1BCA5B1800D2B350 /* libCardIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 064DB26B1BCA5B1800D2B350 /* libCardIO.a */; settings = {ASSET_TAGS = (); }; };
+		064DB2761BCA5CDE00D2B350 /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 064DB26E1BCA5CDE00D2B350 /* libPayPalMobile.a */; settings = {ASSET_TAGS = (); }; };
+		064DB2781BCA5D6800D2B350 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064DB2771BCA5D6800D2B350 /* Accelerate.framework */; };
+		064DB27A1BCA5D7800D2B350 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064DB2791BCA5D7800D2B350 /* AVFoundation.framework */; };
+		064DB27C1BCA5D7F00D2B350 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064DB27B1BCA5D7F00D2B350 /* CoreLocation.framework */; };
+		064DB27E1BCA5D8600D2B350 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064DB27D1BCA5D8600D2B350 /* CoreMedia.framework */; };
+		064DB2801BCA5D8F00D2B350 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064DB27F1BCA5D8F00D2B350 /* MessageUI.framework */; };
+		064DB2821BCA5D9600D2B350 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064DB2811BCA5D9600D2B350 /* MobileCoreServices.framework */; };
+		064DB2841BCA5DA400D2B350 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064DB2831BCA5DA400D2B350 /* SafariServices.framework */; };
+		064DB2881BCA620B00D2B350 /* cardio.license in Resources */ = {isa = PBXBuildFile; fileRef = 064DB2871BCA620B00D2B350 /* cardio.license */; settings = {ASSET_TAGS = (); }; };
+		064DB28A1BCA624000D2B350 /* agilebits.license in Resources */ = {isa = PBXBuildFile; fileRef = 064DB2891BCA624000D2B350 /* agilebits.license */; settings = {ASSET_TAGS = (); }; };
+		064DB28C1BCA625C00D2B350 /* bsd.license in Resources */ = {isa = PBXBuildFile; fileRef = 064DB28B1BCA625C00D2B350 /* bsd.license */; settings = {ASSET_TAGS = (); }; };
+		064DB28E1BCA627C00D2B350 /* george.license in Resources */ = {isa = PBXBuildFile; fileRef = 064DB28D1BCA627C00D2B350 /* george.license */; settings = {ASSET_TAGS = (); }; };
+		064DB2901BCA629400D2B350 /* colloguys in Resources */ = {isa = PBXBuildFile; fileRef = 064DB28F1BCA629400D2B350 /* colloguys */; settings = {ASSET_TAGS = (); }; };
+		064DB2921BCA62A600D2B350 /* willow.license in Resources */ = {isa = PBXBuildFile; fileRef = 064DB2911BCA62A600D2B350 /* willow.license */; settings = {ASSET_TAGS = (); }; };
+		064DB2941BCA62BA00D2B350 /* josh.license in Resources */ = {isa = PBXBuildFile; fileRef = 064DB2931BCA62BA00D2B350 /* josh.license */; settings = {ASSET_TAGS = (); }; };
+		064DB2961BCA62D300D2B350 /* tomas.license in Resources */ = {isa = PBXBuildFile; fileRef = 064DB2951BCA62D300D2B350 /* tomas.license */; settings = {ASSET_TAGS = (); }; };
+		064DB2981BCA62F100D2B350 /* facebood320.license in Resources */ = {isa = PBXBuildFile; fileRef = 064DB2971BCA62F100D2B350 /* facebood320.license */; settings = {ASSET_TAGS = (); }; };
+		064DB29A1BCA631200D2B350 /* openstack.license in Resources */ = {isa = PBXBuildFile; fileRef = 064DB2991BCA631200D2B350 /* openstack.license */; settings = {ASSET_TAGS = (); }; };
+		064DB29C1BCA635100D2B350 /* File.pl in Resources */ = {isa = PBXBuildFile; fileRef = 064DB29B1BCA635100D2B350 /* File.pl */; settings = {ASSET_TAGS = (); }; };
+		064DB29F1BCA6B5C00D2B350 /* DonateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 064DB29E1BCA6B5C00D2B350 /* DonateViewController.m */; settings = {ASSET_TAGS = (); }; };
+		064DB2A31BCA6ED100D2B350 /* splash_screen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 064DB2A21BCA6ED100D2B350 /* splash_screen.jpg */; settings = {ASSET_TAGS = (); }; };
+		064DB2AC1BCA76EA00D2B350 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 064DB2AB1BCA76EA00D2B350 /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
+		064DB2C21BCA80A000D2B350 /* dollar50.png in Resources */ = {isa = PBXBuildFile; fileRef = 064DB2C11BCA80A000D2B350 /* dollar50.png */; settings = {ASSET_TAGS = (); }; };
+		064DB2C41BCA825E00D2B350 /* dollar22.png in Resources */ = {isa = PBXBuildFile; fileRef = 064DB2C31BCA825E00D2B350 /* dollar22.png */; settings = {ASSET_TAGS = (); }; };
+		064DB2C61BCA8B6800D2B350 /* loginBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 064DB2C51BCA8B6800D2B350 /* loginBackground.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +83,6 @@
 		063C0DE51BC9AD3100060173 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		063C0DE61BC9AD3100060173 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		063C0DE91BC9AD3100060173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		063C0DEB1BC9AD3100060173 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		063C0DEE1BC9AD3100060173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		063C0DF01BC9AD3100060173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		063C0DF51BC9AD3100060173 /* KickbackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KickbackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +108,44 @@
 		063C0E341BC9ECD600060173 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		063C0E361BC9FC6D00060173 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		063C0E371BC9FC6D00060173 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		063C0E391BCA1C6C00060173 /* UserDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDetailsViewController.h; sourceTree = "<group>"; };
+		063C0E3A1BCA1C6C00060173 /* UserDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDetailsViewController.m; sourceTree = "<group>"; };
+		063C0E3C1BCA2AF800060173 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		063C0E3D1BCA2AF800060173 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		064DB26B1BCA5B1800D2B350 /* libCardIO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCardIO.a; path = "../PayPal/PayPal-iOS-SDK/CardIO/libCardIO.a"; sourceTree = "<group>"; };
+		064DB26E1BCA5CDE00D2B350 /* libPayPalMobile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPayPalMobile.a; sourceTree = "<group>"; };
+		064DB26F1BCA5CDE00D2B350 /* PayPalConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalConfiguration.h; sourceTree = "<group>"; };
+		064DB2701BCA5CDE00D2B350 /* PayPalFuturePaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalFuturePaymentViewController.h; sourceTree = "<group>"; };
+		064DB2711BCA5CDE00D2B350 /* PayPalMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalMobile.h; sourceTree = "<group>"; };
+		064DB2721BCA5CDE00D2B350 /* PayPalOAuthScopes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalOAuthScopes.h; sourceTree = "<group>"; };
+		064DB2731BCA5CDE00D2B350 /* PayPalPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPayment.h; sourceTree = "<group>"; };
+		064DB2741BCA5CDE00D2B350 /* PayPalPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPaymentViewController.h; sourceTree = "<group>"; };
+		064DB2751BCA5CDE00D2B350 /* PayPalProfileSharingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalProfileSharingViewController.h; sourceTree = "<group>"; };
+		064DB2771BCA5D6800D2B350 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		064DB2791BCA5D7800D2B350 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		064DB27B1BCA5D7F00D2B350 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		064DB27D1BCA5D8600D2B350 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		064DB27F1BCA5D8F00D2B350 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		064DB2811BCA5D9600D2B350 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		064DB2831BCA5DA400D2B350 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		064DB2871BCA620B00D2B350 /* cardio.license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cardio.license; sourceTree = "<group>"; };
+		064DB2891BCA624000D2B350 /* agilebits.license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = agilebits.license; sourceTree = "<group>"; };
+		064DB28B1BCA625C00D2B350 /* bsd.license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bsd.license; sourceTree = "<group>"; };
+		064DB28D1BCA627C00D2B350 /* george.license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = george.license; sourceTree = "<group>"; };
+		064DB28F1BCA629400D2B350 /* colloguys */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = colloguys; sourceTree = "<group>"; };
+		064DB2911BCA62A600D2B350 /* willow.license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = willow.license; sourceTree = "<group>"; };
+		064DB2931BCA62BA00D2B350 /* josh.license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = josh.license; sourceTree = "<group>"; };
+		064DB2951BCA62D300D2B350 /* tomas.license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tomas.license; sourceTree = "<group>"; };
+		064DB2971BCA62F100D2B350 /* facebood320.license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = facebood320.license; sourceTree = "<group>"; };
+		064DB2991BCA631200D2B350 /* openstack.license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = openstack.license; sourceTree = "<group>"; };
+		064DB29B1BCA635100D2B350 /* File.pl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = File.pl; sourceTree = "<group>"; };
+		064DB29D1BCA6B5C00D2B350 /* DonateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DonateViewController.h; sourceTree = "<group>"; };
+		064DB29E1BCA6B5C00D2B350 /* DonateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DonateViewController.m; sourceTree = "<group>"; };
+		064DB2A21BCA6ED100D2B350 /* splash_screen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = splash_screen.jpg; sourceTree = "<group>"; };
+		064DB2AB1BCA76EA00D2B350 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		064DB2C11BCA80A000D2B350 /* dollar50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dollar50.png; path = Kickback/dollar50.png; sourceTree = "<group>"; };
+		064DB2C31BCA825E00D2B350 /* dollar22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dollar22.png; sourceTree = "<group>"; };
+		064DB2C51BCA8B6800D2B350 /* loginBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginBackground.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,13 +153,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				063C0E351BC9ECD600060173 /* MapKit.framework in Frameworks */,
-				063C0E331BC9DEA800060173 /* AudioToolbox.framework in Frameworks */,
+				064DB2841BCA5DA400D2B350 /* SafariServices.framework in Frameworks */,
 				063C0E311BC9DE7200060173 /* SystemConfiguration.framework in Frameworks */,
+				064DB2821BCA5D9600D2B350 /* MobileCoreServices.framework in Frameworks */,
+				064DB2801BCA5D8F00D2B350 /* MessageUI.framework in Frameworks */,
+				064DB27E1BCA5D8600D2B350 /* CoreMedia.framework in Frameworks */,
+				064DB27C1BCA5D7F00D2B350 /* CoreLocation.framework in Frameworks */,
+				064DB27A1BCA5D7800D2B350 /* AVFoundation.framework in Frameworks */,
+				063C0E331BC9DEA800060173 /* AudioToolbox.framework in Frameworks */,
+				064DB2781BCA5D6800D2B350 /* Accelerate.framework in Frameworks */,
+				063C0E351BC9ECD600060173 /* MapKit.framework in Frameworks */,
+				064DB2761BCA5CDE00D2B350 /* libPayPalMobile.a in Frameworks */,
 				063C0E2F1BC9DD4900060173 /* libsqlite3.tbd in Frameworks */,
 				063C0E281BC9DC4900060173 /* Parse.framework in Frameworks */,
 				063C0E291BC9DC4900060173 /* ParseCrashReporting.framework in Frameworks */,
 				063C0E2D1BC9DC4900060173 /* ParseUI.framework in Frameworks */,
+				064DB26C1BCA5B1800D2B350 /* libCardIO.a in Frameworks */,
 				063C0E2A1BC9DC4900060173 /* ParseFacebookUtils.framework in Frameworks */,
 				063C0E271BC9DC4900060173 /* Bolts.framework in Frameworks */,
 				063C0E2C1BC9DC4900060173 /* ParseTwitterUtils.framework in Frameworks */,
@@ -123,7 +196,10 @@
 		063C0DD31BC9AD3100060173 = {
 			isa = PBXGroup;
 			children = (
-				063C0E341BC9ECD600060173 /* MapKit.framework */,
+				064DB2AB1BCA76EA00D2B350 /* Images.xcassets */,
+				064DB2C11BCA80A000D2B350 /* dollar50.png */,
+				064DB2861BCA61B200D2B350 /* License */,
+				064DB26D1BCA5CDE00D2B350 /* PayPalMobile */,
 				063C0E1F1BC9DC3600060173 /* FrameWorks */,
 				063C0DDE1BC9AD3100060173 /* Kickback */,
 				063C0DF81BC9AD3100060173 /* KickbackTests */,
@@ -151,7 +227,7 @@
 				063C0DE51BC9AD3100060173 /* ViewController.h */,
 				063C0DE61BC9AD3100060173 /* ViewController.m */,
 				063C0DE81BC9AD3100060173 /* Main.storyboard */,
-				063C0DEB1BC9AD3100060173 /* Assets.xcassets */,
+				064DB2A21BCA6ED100D2B350 /* splash_screen.jpg */,
 				063C0DED1BC9AD3100060173 /* LaunchScreen.storyboard */,
 				063C0DF01BC9AD3100060173 /* Info.plist */,
 				063C0DDF1BC9AD3100060173 /* Supporting Files */,
@@ -162,6 +238,8 @@
 		063C0DDF1BC9AD3100060173 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				064DB2C51BCA8B6800D2B350 /* loginBackground.png */,
+				064DB2C31BCA825E00D2B350 /* dollar22.png */,
 				063C0DE01BC9AD3100060173 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -194,6 +272,12 @@
 				063C0E1D1BC9C02500060173 /* SignUpViewController.m */,
 				063C0E361BC9FC6D00060173 /* MapViewController.h */,
 				063C0E371BC9FC6D00060173 /* MapViewController.m */,
+				063C0E391BCA1C6C00060173 /* UserDetailsViewController.h */,
+				063C0E3A1BCA1C6C00060173 /* UserDetailsViewController.m */,
+				063C0E3C1BCA2AF800060173 /* ProfileViewController.h */,
+				063C0E3D1BCA2AF800060173 /* ProfileViewController.m */,
+				064DB29D1BCA6B5C00D2B350 /* DonateViewController.h */,
+				064DB29E1BCA6B5C00D2B350 /* DonateViewController.m */,
 			);
 			name = ViewControllers;
 			path = ..;
@@ -202,6 +286,15 @@
 		063C0E1F1BC9DC3600060173 /* FrameWorks */ = {
 			isa = PBXGroup;
 			children = (
+				064DB2831BCA5DA400D2B350 /* SafariServices.framework */,
+				064DB2811BCA5D9600D2B350 /* MobileCoreServices.framework */,
+				064DB27F1BCA5D8F00D2B350 /* MessageUI.framework */,
+				064DB27D1BCA5D8600D2B350 /* CoreMedia.framework */,
+				064DB27B1BCA5D7F00D2B350 /* CoreLocation.framework */,
+				064DB2791BCA5D7800D2B350 /* AVFoundation.framework */,
+				064DB2771BCA5D6800D2B350 /* Accelerate.framework */,
+				064DB26B1BCA5B1800D2B350 /* libCardIO.a */,
+				063C0E341BC9ECD600060173 /* MapKit.framework */,
 				063C0E321BC9DEA800060173 /* AudioToolbox.framework */,
 				063C0E301BC9DE7200060173 /* SystemConfiguration.framework */,
 				063C0E2E1BC9DD4900060173 /* libsqlite3.tbd */,
@@ -214,6 +307,39 @@
 				063C0E261BC9DC4900060173 /* ParseUI.framework */,
 			);
 			name = FrameWorks;
+			sourceTree = "<group>";
+		};
+		064DB26D1BCA5CDE00D2B350 /* PayPalMobile */ = {
+			isa = PBXGroup;
+			children = (
+				064DB26E1BCA5CDE00D2B350 /* libPayPalMobile.a */,
+				064DB26F1BCA5CDE00D2B350 /* PayPalConfiguration.h */,
+				064DB2701BCA5CDE00D2B350 /* PayPalFuturePaymentViewController.h */,
+				064DB2711BCA5CDE00D2B350 /* PayPalMobile.h */,
+				064DB2721BCA5CDE00D2B350 /* PayPalOAuthScopes.h */,
+				064DB2731BCA5CDE00D2B350 /* PayPalPayment.h */,
+				064DB2741BCA5CDE00D2B350 /* PayPalPaymentViewController.h */,
+				064DB2751BCA5CDE00D2B350 /* PayPalProfileSharingViewController.h */,
+			);
+			path = PayPalMobile;
+			sourceTree = "<group>";
+		};
+		064DB2861BCA61B200D2B350 /* License */ = {
+			isa = PBXGroup;
+			children = (
+				064DB2871BCA620B00D2B350 /* cardio.license */,
+				064DB2891BCA624000D2B350 /* agilebits.license */,
+				064DB28B1BCA625C00D2B350 /* bsd.license */,
+				064DB28D1BCA627C00D2B350 /* george.license */,
+				064DB28F1BCA629400D2B350 /* colloguys */,
+				064DB2911BCA62A600D2B350 /* willow.license */,
+				064DB2931BCA62BA00D2B350 /* josh.license */,
+				064DB2951BCA62D300D2B350 /* tomas.license */,
+				064DB2971BCA62F100D2B350 /* facebood320.license */,
+				064DB2991BCA631200D2B350 /* openstack.license */,
+				064DB29B1BCA635100D2B350 /* File.pl */,
+			);
+			name = License;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,8 +447,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				063C0DEF1BC9AD3100060173 /* LaunchScreen.storyboard in Resources */,
-				063C0DEC1BC9AD3100060173 /* Assets.xcassets in Resources */,
+				064DB28C1BCA625C00D2B350 /* bsd.license in Resources */,
+				064DB2C41BCA825E00D2B350 /* dollar22.png in Resources */,
+				064DB2C61BCA8B6800D2B350 /* loginBackground.png in Resources */,
+				064DB2C21BCA80A000D2B350 /* dollar50.png in Resources */,
+				064DB2901BCA629400D2B350 /* colloguys in Resources */,
+				064DB29C1BCA635100D2B350 /* File.pl in Resources */,
+				064DB29A1BCA631200D2B350 /* openstack.license in Resources */,
+				064DB28E1BCA627C00D2B350 /* george.license in Resources */,
+				064DB2AC1BCA76EA00D2B350 /* Images.xcassets in Resources */,
+				064DB2921BCA62A600D2B350 /* willow.license in Resources */,
+				064DB2881BCA620B00D2B350 /* cardio.license in Resources */,
 				063C0DEA1BC9AD3100060173 /* Main.storyboard in Resources */,
+				064DB2981BCA62F100D2B350 /* facebood320.license in Resources */,
+				064DB2A31BCA6ED100D2B350 /* splash_screen.jpg in Resources */,
+				064DB2961BCA62D300D2B350 /* tomas.license in Resources */,
+				064DB28A1BCA624000D2B350 /* agilebits.license in Resources */,
+				064DB2941BCA62BA00D2B350 /* josh.license in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,8 +488,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				063C0E3B1BCA1C6C00060173 /* UserDetailsViewController.m in Sources */,
 				063C0E1B1BC9C01B00060173 /* LoginViewController.m in Sources */,
+				063C0E3E1BCA2AF800060173 /* ProfileViewController.m in Sources */,
 				063C0E1E1BC9C02500060173 /* SignUpViewController.m in Sources */,
+				064DB29F1BCA6B5C00D2B350 /* DonateViewController.m in Sources */,
 				063C0DE71BC9AD3100060173 /* ViewController.m in Sources */,
 				063C0E381BC9FC6D00060173 /* MapViewController.m in Sources */,
 				063C0DE41BC9AD3100060173 /* AppDelegate.m in Sources */,
@@ -491,6 +635,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -498,6 +643,17 @@
 				);
 				INFOPLIST_FILE = Kickback/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Mobile",
+					"Documents/com~apple~CloudDocs/Explore/PayPal/PayPal-iOS-SDK/CardIO",
+					"$(PROJECT_DIR)/PayPalMobile",
+				);
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
+				"OTHER_LDFLAGS[arch=*]" = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mallikarjun.Kickback;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -507,6 +663,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -514,6 +671,16 @@
 				);
 				INFOPLIST_FILE = Kickback/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Mobile",
+					"Documents/com~apple~CloudDocs/Explore/PayPal/PayPal-iOS-SDK/CardIO",
+					"$(PROJECT_DIR)/PayPalMobile",
+				);
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mallikarjun.Kickback;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -586,6 +753,7 @@
 				063C0E0B1BC9AD3100060173 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		063C0E0C1BC9AD3100060173 /* Build configuration list for PBXNativeTarget "KickbackTests" */ = {
 			isa = XCConfigurationList;
@@ -594,6 +762,7 @@
 				063C0E0E1BC9AD3100060173 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		063C0E0F1BC9AD3100060173 /* Build configuration list for PBXNativeTarget "KickbackUITests" */ = {
 			isa = XCConfigurationList;
@@ -602,6 +771,7 @@
 				063C0E111BC9AD3100060173 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
