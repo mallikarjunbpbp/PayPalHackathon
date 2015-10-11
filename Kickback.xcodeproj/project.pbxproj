@@ -30,7 +30,6 @@
 		063C0E381BC9FC6D00060173 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 063C0E371BC9FC6D00060173 /* MapViewController.m */; settings = {ASSET_TAGS = (); }; };
 		063C0E3B1BCA1C6C00060173 /* UserDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 063C0E3A1BCA1C6C00060173 /* UserDetailsViewController.m */; settings = {ASSET_TAGS = (); }; };
 		063C0E3E1BCA2AF800060173 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 063C0E3D1BCA2AF800060173 /* ProfileViewController.m */; settings = {ASSET_TAGS = (); }; };
-		064DB26C1BCA5B1800D2B350 /* libCardIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 064DB26B1BCA5B1800D2B350 /* libCardIO.a */; settings = {ASSET_TAGS = (); }; };
 		064DB2761BCA5CDE00D2B350 /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 064DB26E1BCA5CDE00D2B350 /* libPayPalMobile.a */; settings = {ASSET_TAGS = (); }; };
 		064DB2781BCA5D6800D2B350 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064DB2771BCA5D6800D2B350 /* Accelerate.framework */; };
 		064DB27A1BCA5D7800D2B350 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064DB2791BCA5D7800D2B350 /* AVFoundation.framework */; };
@@ -56,6 +55,8 @@
 		064DB2C21BCA80A000D2B350 /* dollar50.png in Resources */ = {isa = PBXBuildFile; fileRef = 064DB2C11BCA80A000D2B350 /* dollar50.png */; settings = {ASSET_TAGS = (); }; };
 		064DB2C41BCA825E00D2B350 /* dollar22.png in Resources */ = {isa = PBXBuildFile; fileRef = 064DB2C31BCA825E00D2B350 /* dollar22.png */; settings = {ASSET_TAGS = (); }; };
 		064DB2C61BCA8B6800D2B350 /* loginBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 064DB2C51BCA8B6800D2B350 /* loginBackground.png */; settings = {ASSET_TAGS = (); }; };
+		064DB2C91BCAC6A500D2B350 /* UserAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 064DB2C81BCAC6A500D2B350 /* UserAnnotation.m */; settings = {ASSET_TAGS = (); }; };
+		06B1AC101BCAD8DF00341A52 /* EventsTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B1AC0F1BCAD8DF00341A52 /* EventsTableTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,7 +113,6 @@
 		063C0E3A1BCA1C6C00060173 /* UserDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDetailsViewController.m; sourceTree = "<group>"; };
 		063C0E3C1BCA2AF800060173 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		063C0E3D1BCA2AF800060173 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
-		064DB26B1BCA5B1800D2B350 /* libCardIO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCardIO.a; path = "../PayPal/PayPal-iOS-SDK/CardIO/libCardIO.a"; sourceTree = "<group>"; };
 		064DB26E1BCA5CDE00D2B350 /* libPayPalMobile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPayPalMobile.a; sourceTree = "<group>"; };
 		064DB26F1BCA5CDE00D2B350 /* PayPalConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalConfiguration.h; sourceTree = "<group>"; };
 		064DB2701BCA5CDE00D2B350 /* PayPalFuturePaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalFuturePaymentViewController.h; sourceTree = "<group>"; };
@@ -146,6 +146,10 @@
 		064DB2C11BCA80A000D2B350 /* dollar50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dollar50.png; path = Kickback/dollar50.png; sourceTree = "<group>"; };
 		064DB2C31BCA825E00D2B350 /* dollar22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dollar22.png; sourceTree = "<group>"; };
 		064DB2C51BCA8B6800D2B350 /* loginBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginBackground.png; sourceTree = "<group>"; };
+		064DB2C71BCAC6A500D2B350 /* UserAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAnnotation.h; sourceTree = "<group>"; };
+		064DB2C81BCAC6A500D2B350 /* UserAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAnnotation.m; sourceTree = "<group>"; };
+		06B1AC0E1BCAD8DF00341A52 /* EventsTableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsTableTableViewController.h; sourceTree = "<group>"; };
+		06B1AC0F1BCAD8DF00341A52 /* EventsTableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsTableTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,7 +172,6 @@
 				063C0E281BC9DC4900060173 /* Parse.framework in Frameworks */,
 				063C0E291BC9DC4900060173 /* ParseCrashReporting.framework in Frameworks */,
 				063C0E2D1BC9DC4900060173 /* ParseUI.framework in Frameworks */,
-				064DB26C1BCA5B1800D2B350 /* libCardIO.a in Frameworks */,
 				063C0E2A1BC9DC4900060173 /* ParseFacebookUtils.framework in Frameworks */,
 				063C0E271BC9DC4900060173 /* Bolts.framework in Frameworks */,
 				063C0E2C1BC9DC4900060173 /* ParseTwitterUtils.framework in Frameworks */,
@@ -278,6 +281,10 @@
 				063C0E3D1BCA2AF800060173 /* ProfileViewController.m */,
 				064DB29D1BCA6B5C00D2B350 /* DonateViewController.h */,
 				064DB29E1BCA6B5C00D2B350 /* DonateViewController.m */,
+				064DB2C71BCAC6A500D2B350 /* UserAnnotation.h */,
+				064DB2C81BCAC6A500D2B350 /* UserAnnotation.m */,
+				06B1AC0E1BCAD8DF00341A52 /* EventsTableTableViewController.h */,
+				06B1AC0F1BCAD8DF00341A52 /* EventsTableTableViewController.m */,
 			);
 			name = ViewControllers;
 			path = ..;
@@ -293,7 +300,6 @@
 				064DB27B1BCA5D7F00D2B350 /* CoreLocation.framework */,
 				064DB2791BCA5D7800D2B350 /* AVFoundation.framework */,
 				064DB2771BCA5D6800D2B350 /* Accelerate.framework */,
-				064DB26B1BCA5B1800D2B350 /* libCardIO.a */,
 				063C0E341BC9ECD600060173 /* MapKit.framework */,
 				063C0E321BC9DEA800060173 /* AudioToolbox.framework */,
 				063C0E301BC9DE7200060173 /* SystemConfiguration.framework */,
@@ -493,6 +499,8 @@
 				063C0E3E1BCA2AF800060173 /* ProfileViewController.m in Sources */,
 				063C0E1E1BC9C02500060173 /* SignUpViewController.m in Sources */,
 				064DB29F1BCA6B5C00D2B350 /* DonateViewController.m in Sources */,
+				064DB2C91BCAC6A500D2B350 /* UserAnnotation.m in Sources */,
+				06B1AC101BCAD8DF00341A52 /* EventsTableTableViewController.m in Sources */,
 				063C0DE71BC9AD3100060173 /* ViewController.m in Sources */,
 				063C0E381BC9FC6D00060173 /* MapViewController.m in Sources */,
 				063C0DE41BC9AD3100060173 /* AppDelegate.m in Sources */,

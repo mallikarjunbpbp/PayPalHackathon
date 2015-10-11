@@ -9,6 +9,8 @@
 #import "MapViewController.h"
 #define METERS_PER_MILE 1609.344
 #import "UserDetailsViewController.h"
+#import <Parse/Parse.h>
+#import "UserAnnotation.h"
 
 @interface MapViewController ()
 
@@ -19,6 +21,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
     mapView.delegate = self;
     self.locationManager = [[CLLocationManager alloc] init];
     self.locationManager.delegate = self;
@@ -41,21 +45,58 @@
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(mapView.userLocation.coordinate, 400*METERS_PER_MILE, 400*METERS_PER_MILE);
     [self.mapView setRegion:[self.mapView regionThatFits:region] animated:YES];
     
+    PFUser *currentUser = [PFUser currentUser];
+    if (!currentUser) {
+                    // show the signup or login screen
+        NSLog(@"Unidentified Current User");
+    } else {
+            // do stuff with the user
+        NSLog(@"Get data related to %@", currentUser.username);
+        _username=currentUser.username;
+    }
+    NSLog(@"Getting data for user %@", _username);
+    //call service to send message to the person
+    NSString* str= [NSString stringWithFormat:@"http://192.168.115.41:8080/username/findsimilar/?client_id=%@",_username ];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:str]];
+    NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
     
-    //adding annotations
-    CLLocationDegrees lat= 32.217432;
-    CLLocationDegrees longi= -110.923983;
+    NSError *jsonParsingError = nil;
     
-//    for (int i=0; i< 20; i++) {
-        MKPointAnnotation *myAnnotation = [[MKPointAnnotation alloc]init];
-        myAnnotation.coordinate = CLLocationCoordinate2DMake(lat++,longi++);
-        myAnnotation.title = @"Matthews Pizza";
-        myAnnotation.subtitle = @"Best Pizza in Town";
-        [self.mapView addAnnotation:myAnnotation];
-    //}
+    id jsonObject = [NSJSONSerialization JSONObjectWithData: response options: NSJSONReadingMutableContainers error: &jsonParsingError];
     
-    
-
+    CLLocationDegrees lat;
+    CLLocationDegrees longi;
+    NSString* name;
+    NSString* username;
+    if (!jsonObject) {
+        NSLog(@"Error parsing JSON: %@", jsonParsingError);
+    } else {
+        if ([jsonObject isKindOfClass:[NSArray class]]) {
+            NSLog(@"its an array!");
+            _jsonArray = (NSArray *)jsonObject;
+            NSLog(@"jsonArray - %@",_jsonArray);
+            for(int i=0;i<[_jsonArray count];i++){
+                
+                lat = [[[_jsonArray objectAtIndex:i] objectForKey:@"lat"] doubleValue];
+                longi = [[[_jsonArray objectAtIndex:i] objectForKey:@"lng"] doubleValue];
+                name = [[_jsonArray objectAtIndex:i] objectForKey:@"Name"];
+                username = [[_jsonArray objectAtIndex:i] objectForKey:@"username"];
+                
+                UserAnnotation *userAnnotation = [[UserAnnotation alloc]init];
+                userAnnotation.coordinate = CLLocationCoordinate2DMake(lat,longi);
+                userAnnotation.title = name;
+                userAnnotation.subtitle = username;
+                userAnnotation.index=i;
+                [self.mapView addAnnotation:userAnnotation];
+            }
+        }
+        else {
+            NSLog(@"its probably a dictionary");
+            NSDictionary *jsonDictionary = (NSDictionary *)jsonObject;
+            NSLog(@"jsonDictionary - %@",jsonDictionary);
+        }
+        
+    }
     
 }
 
@@ -65,17 +106,27 @@
     if ([annotation isKindOfClass:[MKUserLocation class]])
         return nil;
     
-    MKPinAnnotationView *annView=[[MKPinAnnotationView alloc]initWithAnnotation:annotation reuseIdentifier:@"pin"];
-
-//        annView.animatesDrop = YES;
+    if ([annotation isKindOfClass:[UserAnnotation class]]) {
+        MKPinAnnotationView *annView=[[MKPinAnnotationView alloc]initWithAnnotation:annotation reuseIdentifier:@"pin"];
+        UserAnnotation *userAnnotation = (UserAnnotation *)annotation;
+        
+        NSDictionary* userObject=[_jsonArray objectAtIndex:userAnnotation.index];
+        float red;
+        float green;
+        float blue;
+        red=[[userObject objectForKey:@"r"] doubleValue];
+        green=[[userObject objectForKey:@"g"] doubleValue];
+        blue=[[userObject objectForKey:@"b"] doubleValue];
+        
         annView.canShowCallout = YES;
-        annView.pinTintColor = [UIColor colorWithRed:14.0/255.0 green:114.0/255.0 blue:199.0/255.0 alpha:1];
+        annView.pinTintColor = [UIColor colorWithRed:red green:green blue:blue alpha:1];
         UIButton *detailButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
         annView.rightCalloutAccessoryView=detailButton;
-    
-    return annView;
-    
 
+        return annView;
+    }
+    
+        return nil;
 }
 
 
@@ -109,6 +160,7 @@
                     // Pass any objects to the view controller here, like...
         NSLog(@"user name is :%@", sender);
         userDetailsViewController.username=sender;
+        userDetailsViewController.fromUsername=self.username;
 
     }
 }
@@ -136,14 +188,5 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

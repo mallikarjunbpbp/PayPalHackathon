@@ -33,8 +33,10 @@
     } else {
         // show the signup or login screen
     }
-    _username.text=@"Mallikarjun";
-    _currentObjID=@"yGlyaA8BBJ";
+    
+//#warning replace this
+//    _username.text=@"gkumbhat";
+//    _currentObjID=@"yGlyaA8BBJ";
     
     //get the screen details of username
     PFQuery *query = [PFQuery queryWithClassName:@"_User"];

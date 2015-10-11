@@ -18,9 +18,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+
+}
+
+-(void)viewWillAppear:(BOOL)animated{
     
     NSString *urlString = @"http://childrenscancernetwork.org/donate/now";
-
+    
 //    NSString *urlString = @"https://www.google.com";
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:urlString]]];
 }

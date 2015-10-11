@@ -46,9 +46,23 @@
                                     block:^(PFUser *user, NSError *error) {
                                         if (user) {
                                             NSLog(@"USer logged in successfully!!");
+                                            [self performSegueWithIdentifier:@"loginToMap" sender:self];
+                                            
                                         } else {
                                             NSLog(@"error %@", [error userInfo][@"error"]);
+                                            [_statusLabel setText:@"Unable to Login"];
                                         }
                                     }];
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Make sure your segue name in storyboard is the same as this line
+    if ([[segue identifier] isEqualToString:@"loginToMap"])
+    {
+        //prepare for segue signUpToHome
+        UIViewController *mapViewController = [segue destinationViewController];
+    }
+}
+
 @end

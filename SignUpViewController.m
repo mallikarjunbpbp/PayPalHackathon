@@ -8,7 +8,7 @@
 
 #import "SignUpViewController.h"
 #import <Parse/Parse.h>
-
+#import "MapViewController.h"
 @interface SignUpViewController ()
 
 @end
@@ -66,8 +66,8 @@
         user[@"gender"] = [_gender text];
         [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
             if (!error) {
-                
                 NSLog(@"Insertion successful. Move to Home Page");
+                [self performSegueWithIdentifier:@"signUpToHome" sender:self];
             } else {
                 NSString *errorString = [error userInfo][@"error"];
                 NSLog(@"errorString %@", errorString);
@@ -78,5 +78,13 @@
     
 }
 
-
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Make sure your segue name in storyboard is the same as this line
+    if ([[segue identifier] isEqualToString:@"signUpToHome"])
+    {
+        //prepare for segue signUpToHome
+        MapViewController *mapViewController = [segue destinationViewController];
+    }
+}
 @end
