@@ -153,7 +153,6 @@
     NSLog(@"%@",view.annotation.subtitle);
     [self performSegueWithIdentifier:@"mapContactDetails" sender:view.annotation.subtitle];
     
-    
 }
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {

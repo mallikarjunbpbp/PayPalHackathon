@@ -13,7 +13,6 @@ fout = open('output4.json', 'w')
 
 url = "http://access.alchemyapi.com/calls/text/TextGetRankedNamedEntities"
 
-querystring = {"outputMode":"json","apikey":"8462b3bfd897b9336199aa651bf0501ae0951266"}
 
 completeData = []
 val=len(result["results"])
